@@ -1,0 +1,49 @@
+/* Minimal CSS - Tailwind handles most styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: rgb(5, 5, 5);
+  color: rgb(245, 245, 245);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Serif font for headings */
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Smooth transitions */
+a {
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+/* No visible focus outline */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid rgb(202, 138, 4);
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+}
